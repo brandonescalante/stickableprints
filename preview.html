@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
 
     <style>
-      body {
-        min-height: 100%;
-      }
-
       .upload-tile {
         display: flex;
         justify-content: center;
@@ -20,8 +16,9 @@
         cursor: pointer;
       }
 
-      .page-container {
-        min-height: 100%;
+      .tile-image {
+        max-width:100%;
+        max-height:100%;
       }
     </style>
 
@@ -31,7 +28,7 @@
 
   </head>
   <body>
-  <div class="container section page-container">
+  <div class="container section">
 
     <nav class="nav section" id="top">
       <div class="container">
@@ -73,28 +70,82 @@
     <div class="columns section">
 
       <div class="column is-8">
-        <div class="title">Select What You Want</div>
+        <div class="title">Photos</div>
+        <div class="upload-wrap">
+          <a class="button is-primary" onclick="showPicker()">Add Photos</a>
+        </div>
       </div>
     </div>
 
-    <div class="columns">
-      <div class="column">
-        <div class="box is-light">
-          <h2>Single Sheet</h2>
-          <div>Price: $5.99</div>
-          <br/>
-          <a class="button is-primary" href="preview.html">Select</a>
+    <div class="box tilesheet" style="display: none;">
+      <div class="columns">
+        <div class="column">
+          <div class="card upload-tile">
+            Add Photo
+          </div>
+        </div>
+        <div class="column">
+          <div class="card upload-tile">
+            Add Photo
+          </div>
+        </div>
+        <div class="column">
+          <div class="card upload-tile">
+            Add Photo
+          </div>
+        </div>
+        <div class="column">
+          <div class="card upload-tile">
+            Add Photo
+          </div>
         </div>
       </div>
-      <div class="column">
-        <div class="box is-light">
-          <h2>Booklet</h2>
-          <div>Price: $15.99</div>
-          <br/>
-          <a class="button is-primary" href="preview.html">Select</a>
+
+      <div class="columns">
+        <div class="column">
+          <div class="card upload-tile">
+            Add Photo
+          </div>
+        </div>
+        <div class="column">
+          <div class="card upload-tile">
+            Add Photo
+          </div>
+        </div>
+        <div class="column">
+          <div class="card upload-tile">
+            Add Photo
+          </div>
+        </div>
+        <div class="column">
+          <div class="card upload-tile">
+            Add Photo
+          </div>
         </div>
       </div>
-    </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="card upload-tile">
+            Add Photo
+          </div>
+        </div>
+        <div class="column">
+          <div class="card upload-tile">
+            Add Photo
+          </div>
+        </div>
+        <div class="column">
+          <div class="card upload-tile">
+            Add Photo
+          </div>
+        </div>
+        <div class="column">
+          <div class="card upload-tile">
+            Add Photo
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
